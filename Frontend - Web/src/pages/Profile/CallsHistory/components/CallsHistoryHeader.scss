@@ -1,0 +1,70 @@
+.calls-history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 24px 16px;
+    border-bottom: 1px solid #e5e7eb;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+
+    h2 {
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .filter-controls {
+        display: flex;
+        gap: 8px;
+
+        .filter-btn {
+            padding: 8px 16px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.875rem;
+            font-weight: 500;
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.2);
+                transform: translateY(-1px);
+            }
+
+            &.active {
+                background: rgba(255, 255, 255, 0.9);
+                color: #667eea;
+                border-color: rgba(255, 255, 255, 0.9);
+            }
+        }
+    }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+    .calls-history-header {
+        flex-direction: column;
+        gap: 16px;
+        padding: 20px 16px 12px;
+
+        .filter-controls {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .calls-history-header {
+        .filter-controls {
+            flex-direction: column;
+            width: 100%;
+
+            .filter-btn {
+                width: 100%;
+            }
+        }
+    }
+}
