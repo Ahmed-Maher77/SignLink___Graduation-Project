@@ -1,0 +1,5 @@
+.prediction-label { font-weight: 600; }
+    .prediction-confidence { color: #6c757d; }
+    .pred-high { color: #28a745 !important; } 
+    .pred-mid { color: #ffc107 !important; }  
+    .pred-low { color: #dc3545 !important; }
