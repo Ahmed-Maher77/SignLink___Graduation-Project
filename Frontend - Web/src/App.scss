@@ -1,0 +1,178 @@
+// ===================== Variables =====================
+$trans-3: 0.3s;
+:root {
+	--main-color: rgb(7 145 144);
+	--main-d-color: rgb(3, 90, 90);
+	--white-c: #fff;
+	--orange-c: #ffa501;
+	--gray-c: #eeeeee;
+	--gray-dark-c: #6b6b6b;
+	--gray-m-c: #dadada;
+}
+
+// ===================== Mixins =====================
+@mixin animated-hover-icon($dir) {
+	.animated-hover-wraper:hover & {
+		animation: move-#{$dir} 0.7s infinite alternate;
+	}
+	@keyframes move-#{$dir} {
+		0% {
+			transform: if($dir == "x", translateX(5px), translateY(0));
+		}
+		100% {
+			transform: if($dir == "x", translateX(-5px), translateY(-8px));
+		}
+	}
+}
+// Popover
+@mixin popover($direction, $width) {
+	position: relative;
+	transition: $trans-3;
+	&:hover {
+		&:after,
+		&:before {
+			position: absolute;
+			transform: translateX(-50%);
+			left: 50%;
+		}
+		&:after {
+			content: "";
+			#{$direction}: -15px;
+			border: 10px solid transparent;
+			border-#{$direction}-color: #fff;
+		}
+		&:before {
+			content: attr(title);
+			padding: 8px;
+			background-color: #fff;
+			border-radius: 10px;
+			color: #000;
+			left: 50%;
+			#{$direction}: -54px;
+			font-size: 1rem;
+			min-width: $width;
+			z-index: 5;
+			content: attr(title);
+			height: fit-content;
+		}
+	}
+}
+
+// ===================== Body =====================
+
+body {
+	&.prevent-scrolling {
+		overflow: hidden;
+	}
+	overflow-x: hidden;
+}
+::-webkit-scrollbar {
+	width: 5px;
+}
+::-webkit-scrollbar-track {
+	background-color: var(--gray-c);
+	// border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--main-color);
+	border-radius: 10px;
+}
+
+// ===================== Reusable Classes =====================
+// Colors
+.main-color {
+	color: var(--main-color);
+}
+.white-c {
+	color: var(--white-c);
+}
+.orange-c {
+	color: var(--orange-c);
+}
+.gray-m-c {
+	color: var(--gray-m-c);
+}
+.gray-dark-c {
+	color: var(--gray-dark-c);
+}
+.bg-main {
+	background-color: var(--main-color);
+}
+.bg-white {
+	background-color: var(--white-c);
+}
+.bg-gray {
+	background-color: var(--gray-c);
+}
+.bg-d-gray {
+	background-color: var(--gray-dark-c);
+}
+
+// Buttons
+.btn-black {
+	background-color: #000;
+}
+.btn-black:hover {
+	background-color: #000000c0;
+	transition: $trans-3;
+}
+.btn-main {
+	background-color: var(--main-color);
+	border: 2px solid var(--main-color);
+	padding: 13px 30px;
+	border-radius: 35px;
+	color: #fff;
+}
+.btn-main:hover {
+	color: var(--main-color);
+	background-color: transparent;
+	transition: $trans-3;
+}
+
+// Borders
+.border-d-gray {
+	border: 4px solid var(--gray-dark-c);
+}
+.border-main-c {
+	border: 2px solid var(--main-color);
+}
+
+// Height
+.min-h-page {
+	min-height: calc(100vh - 60px);
+}
+
+// Transitions
+.trans-3 {
+	transition: $trans-3;
+}
+
+// Animations
+.animated-hover-x {
+	// for its parent => .animated-hover-wraper
+	@include animated-hover-icon(x);
+}
+.animated-hover-y {
+	// for its parent => .animated-hover-wraper
+	@include animated-hover-icon(y);
+}
+
+
+
+
+// Tailwind Breakpoints
+@media (min-width: 640px) {
+	
+}
+@media (min-width: 768px) {
+	
+}
+@media (min-width: 1024px) {
+	
+}
+@media (min-width: 1280px) {
+
+}
+@media (min-width: 1536px) {
+
+}
