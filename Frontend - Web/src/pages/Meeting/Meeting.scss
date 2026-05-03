@@ -1,0 +1,23 @@
+@mixin button($bgColor) {
+	border: 2px solid $bgColor;
+	background-color: $bgColor;
+	&:hover {
+		background-color: transparent;
+		color: $bgColor;
+	}
+}
+
+.control-meeting-btn {
+	letter-spacing: 0.6px;
+	&.blue {
+        @include button(#0d59c3);
+	}
+	&.main {
+        @include button(var(--main-color));
+	}
+}
+
+
+.start-camera-btn:disabled {
+	background-color: #303030;
+}
