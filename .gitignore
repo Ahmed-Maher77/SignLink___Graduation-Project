@@ -1,1 +1,11 @@
-slowfast_460.pth"AI Models/English/models/slowfast_460.pth" 
+slowfast_460.pth
+AI Models/English/models/slowfast_460.pth
+slowfast_300.pth
+AI Models/English/models/slowfast_300.pth
+ASL Models/English/models/slowfast_460.pth
+ASL Models/English/models/slowfast_300.pth
+ASL Models/English/models/aslcitizen_460_label_map.json
+ASL Models/English/models/aslcitizen_300_label_map.json
+ASL Models/English/models/aslcitizen_460_label_map.json
+
+*.mp4
