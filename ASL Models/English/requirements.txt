@@ -1,0 +1,10 @@
+numpy==1.26.4
+opencv_contrib_python==4.11.0.86
+pytorchvideo==0.1.5
+torch==2.1.2
+torchvision==0.16.2
+uvicorn==0.34.0
+fastapi==0.115.8
+websockets==14.2
+requests==2.32.3
+python-dotenv==1.1.0
