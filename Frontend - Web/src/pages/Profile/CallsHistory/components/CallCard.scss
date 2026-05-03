@@ -1,0 +1,12 @@
+.call-card {
+    border-bottom: 1px solid #f3f4f6;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: #f9fafb;
+    }
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
