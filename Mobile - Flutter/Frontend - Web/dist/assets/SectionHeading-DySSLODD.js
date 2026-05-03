@@ -1,0 +1,1 @@
+import{j as e}from"./index-QrJh3Kf7.js";const x=({title:t,className:s})=>e.jsxs("div",{className:"Section-Heading",children:[e.jsx("h1",{className:`text-center text-4xl lg:text-5xl font-bold ${s}`,children:t}),e.jsx("span",{})]});export{x as S};
