@@ -1,0 +1,110 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Post 1",
+      "content": "This is the first post."
+    },
+    {
+      "id": "2",
+      "title": "Post 2",
+      "content": "This is the second post."
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Ahmed",
+      "email": "ahmed@example.com"
+    },
+    {
+      "id": "2",
+      "name": "Maher",
+      "email": "maher@example.com"
+    },
+    {
+      "id": "f93d",
+      "username": "Ahmed_Maher77",
+      "email": "ahmedmaheraljwhry057@gmail.com",
+      "password": "fffffffffff$R00",
+      "phoneNumber": "01096528514"
+    },
+    {
+      "id": "cd2b",
+      "username": "ahmed12345",
+      "email": "ahmedmaheraljwhry057@gmail.com",
+      "password": "ddddddddd$#00S",
+      "phoneNumber": "01096528514"
+    },
+    {
+      "id": "e5be",
+      "username": "Ahmed_Maher77",
+      "email": "ahmedmaheraljwhry057@gmail.com",
+      "password": "kkkkkkkkkF$05",
+      "phoneNumber": "01096528514"
+    },
+    {
+      "id": "4f11",
+      "username": "Ahmed_Maher77",
+      "email": "ahmedmaheraljwhry057@gmail.com",
+      "password": "FFFFF$$%%gggg2222",
+      "phoneNumber": "01096528514"
+    },
+    {
+      "id": "b1a9",
+      "username": "Ahmed_Maher77",
+      "email": "ahmedmaheraljwhry057@gmail.com",
+      "password": "ddddddddddddddddddd$#%000fD",
+      "phoneNumber": "01096528514"
+    },
+    {
+      "id": "8803",
+      "username": "Ahmed_Maher77",
+      "email": "ahmedmaheraljwhry057@gmail.com",
+      "password": "ddddddddddddddddddd$#%000fD",
+      "phoneNumber": "01096528514"
+    },
+    {
+      "id": "7a7d",
+      "username": "Ahmed_Maher77",
+      "email": "ahmedmaheraljwhry057@gmail.com",
+      "password": "ddddddd#$ffG25",
+      "phoneNumber": "01096528514"
+    },
+    {
+      "id": "cbd8",
+      "username": "Ahmed_Maher77",
+      "email": "ahmedmaheraljwhry057@gmail.com",
+      "password": "ddddddd#$ffG25",
+      "phoneNumber": "01096528514"
+    },
+    {
+      "id": "4510",
+      "username": "Ahmed_Maher77",
+      "email": "ahmedmaheraljwhry057@gmail.com",
+      "password": "ddddddd#$ffG25",
+      "phoneNumber": "01096528514"
+    },
+    {
+      "id": "5907",
+      "username": "Ahmed_Maher77",
+      "email": "ahmedmaheraljwhry057@gmail.com",
+      "password": "AAAAAAAAAAAAAAAAAAAAAAAa$00",
+      "phoneNumber": "01096528514"
+    },
+    {
+      "id": "d34b",
+      "username": "Ahmed_Maher77",
+      "email": "ahmedmaheraljwhry057@gmail.com",
+      "password": "cccccccccD0$",
+      "phoneNumber": "01096528514"
+    },
+    {
+      "id": "03b0",
+      "username": "Ahmed_Maher77",
+      "email": "ahmedmaheraljwhry057@gmail.com",
+      "password": "000000000000ff*A",
+      "phoneNumber": "01096528514"
+    }
+  ]
+}
