@@ -1,0 +1,9 @@
+@use "../../App.scss" as *;
+
+.showUpToTop_Button {
+    z-index: 55;
+    transition: $trans-3;
+    &:hover {
+        box-shadow: 0 0 5px 4px #00000033;
+    }
+}
