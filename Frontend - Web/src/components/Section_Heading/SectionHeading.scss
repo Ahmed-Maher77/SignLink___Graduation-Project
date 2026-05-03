@@ -1,0 +1,48 @@
+.Section-Heading {
+	position: relative;
+	h1 {
+		position: relative;
+		width: fit-content;
+		margin-inline: auto;
+		background-image: linear-gradient(
+			to right,
+			var(--main-color) 40%,
+			var(--orange-c),
+		);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		// &::before,
+		// &::after {
+		// 	position: absolute;
+		// 	content: "";
+		// 	top: 50%;
+		// 	// transform: translateY(-50%);
+		// 	width: 10px;
+		// 	height: 10px;
+		// 	border-radius: 50%;
+		// 	background-color: var(--main-color);
+		// }
+		// &::before {
+		// 	left: -25px;
+		// }
+		// &::after {
+		// 	right: -25px;
+		// }
+	}
+	span {
+		content: "";
+		position: absolute;
+		bottom: -18px;
+		left: 50%;
+		translate: -50% 0;
+		width: 130px;
+		height: 3px;
+		background-image: linear-gradient(
+			to right,
+			var(--main-color) 30%,
+			var(--orange-c) 90%,
+			transparent
+		);
+	}
+}
