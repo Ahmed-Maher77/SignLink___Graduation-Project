@@ -1,0 +1,1 @@
+This directory contains pre-trained AI models, demos and accompanying resources for real-time sign language translation.
