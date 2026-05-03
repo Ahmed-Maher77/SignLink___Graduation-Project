@@ -1,0 +1,207 @@
+.speech-to-text-button {
+    position: absolute;
+    top: 48px;
+    right: 10px;
+    z-index: 10;
+
+    &.fallback {
+        .manual-input-container {
+            position: absolute;
+            bottom: 60px;
+            right: 0;
+            background-color: white;
+            border-radius: 8px;
+            padding: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            min-width: 250px;
+            animation: fadeIn 0.3s ease-in-out;
+
+            .manual-text-input {
+                width: 100%;
+                padding: 8px 12px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                font-size: 14px;
+                margin-bottom: 8px;
+                outline: none;
+
+                &:focus {
+                    border-color: #007bff;
+                    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+                }
+
+                &::placeholder {
+                    color: #999;
+                }
+            }
+
+            .submit-button {
+                background-color: #007bff;
+                color: white;
+                border: none;
+                padding: 6px 12px;
+                border-radius: 4px;
+                font-size: 12px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+
+                &:hover:not(:disabled) {
+                    background-color: #0056b3;
+                }
+
+                &:disabled {
+                    background-color: #ccc;
+                    cursor: not-allowed;
+                }
+            }
+        }
+    }
+
+    .mic-button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            transform: scale(1.1);
+        }
+
+        &.listening {
+            background-color: #dc3545;
+            animation: pulse 1.5s infinite;
+
+            &:hover {
+                background-color: #c82333;
+            }
+        }
+
+        &.error {
+            background-color: #ffc107;
+            animation: shake 0.5s ease-in-out;
+
+            &:hover {
+                background-color: #e0a800;
+            }
+        }
+
+        &.fallback-mode {
+            background-color: #28a745;
+
+            &:hover {
+                background-color: #218838;
+            }
+        }
+
+        &.disabled {
+            background-color: rgba(108, 117, 125, 0.6);
+            cursor: not-allowed;
+            opacity: 0.6;
+
+            &:hover {
+                background-color: rgba(108, 117, 125, 0.6);
+                transform: none;
+            }
+        }
+
+        svg {
+            transition: all 0.3s ease;
+        }
+    }
+
+    .listening-indicator {
+        position: absolute;
+        bottom: 60px;
+        right: 0;
+        background-color: #28a745;
+        color: white;
+        padding: 6px 10px;
+        border-radius: 6px;
+        font-size: 11px;
+        font-weight: 500;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        animation: pulse 1.5s infinite;
+        white-space: nowrap;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            right: 20px;
+            border: 4px solid transparent;
+            border-top-color: #28a745;
+        }
+    }
+
+    .error-tooltip {
+        position: absolute;
+        bottom: 60px;
+        right: 0;
+        background-color: #dc3545;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 6px;
+        font-size: 12px;
+        max-width: 200px;
+        word-wrap: break-word;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        animation: fadeIn 0.3s ease-in-out;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            right: 20px;
+            border: 5px solid transparent;
+            border-top-color: #dc3545;
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(220, 53, 69, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(220, 53, 69, 0);
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-2px);
+    }
+    75% {
+        transform: translateX(2px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
