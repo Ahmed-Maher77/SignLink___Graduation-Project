@@ -11,6 +11,16 @@ SignLink is a web and mobile application designed to bridge communication gaps f
 
 ---
 
+## ⚠️ Current Status
+
+![Status: Limited](https://img.shields.io/badge/Status-Limited-red)
+
+Backend and AI services are currently **inactive** due to infrastructure and hosting costs.
+
+👉 The live demo is limited to **UI and user flow demonstration only**.
+
+---
+
 ## 🚀 Overview
 
 SignLink enables seamless communication between sign language users and non-signers by combining real-time video calling with intelligent translation features.
@@ -28,16 +38,6 @@ The platform supports:
 - 🗣️ Speech-to-text conversion during calls
 - 🌐 Cross-platform experience (web and mobile)
 - ♿ Accessibility-focused UI and interactions
-
----
-
-## ⚠️ Current Status
-
-![Status: Limited](https://img.shields.io/badge/Status-Limited-red)
-
-Backend and AI services are currently **inactive** due to infrastructure and hosting costs.
-
-👉 The live demo is limited to **UI and user flow demonstration only**.
 
 ---
 
