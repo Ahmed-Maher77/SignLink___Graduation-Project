@@ -4,6 +4,13 @@ SignLink is a web and mobile application designed to bridge communication gaps f
 
 ---
 
+## 🔗 Demo
+
+- **Live Preview (Web):** [https://sign-link.netlify.app/](https://sign-link.netlify.app/)
+- **Demo Video:** [https://drive.google.com/file/d/15c-X8h4gDA0iXeek2fPBwkUK2SauJX5m/view](https://drive.google.com/file/d/15c-X8h4gDA0iXeek2fPBwkUK2SauJX5m/view)
+
+---
+
 ## 🚀 Overview
 
 SignLink enables seamless communication between sign language users and non-signers by combining real-time video calling with intelligent translation features.
@@ -21,13 +28,6 @@ The platform supports:
 - 🗣️ Speech-to-text conversion during calls
 - 🌐 Cross-platform experience (web and mobile)
 - ♿ Accessibility-focused UI and interactions
-
----
-
-## 🔗 Demo
-
-- **Live Preview (Web):** [https://sign-link.netlify.app/](https://sign-link.netlify.app/)
-- **Demo Video:** [https://drive.google.com/file/d/15c-X8h4gDA0iXeek2fPBwkUK2SauJX5m/view](https://drive.google.com/file/d/15c-X8h4gDA0iXeek2fPBwkUK2SauJX5m/view)
 
 ---
 
